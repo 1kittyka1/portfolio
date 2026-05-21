@@ -1,0 +1,64 @@
+
+.modalwindow{
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    background: black;
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.modalwindow h2{
+    font-size: 50px;
+    background: none;
+}
+.modalwindow p{
+    font-size: 30px;
+    background: none;
+}
+.btnno{
+    width: 15%;
+    height: 10%;
+    background: white;
+    border-radius: 50px;
+    background: black;
+    border: 1px solid grey;
+}
+.modal_nav{
+    display: flex;
+    width: 95%;
+    height: 5%;
+}
+.modal_nav_item{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.modal_img{
+    background-image: url(../img/kittyerror.png);
+    height: 90%;
+    background-size: cover;
+    width: 50%;
+}
+.modal_main{
+    height: 90%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modal_text{
+    height: 40%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.modal_text p, h2{
+    width: 100%;
+    text-indent: 0;
+}

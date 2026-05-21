@@ -1,0 +1,49 @@
+.buger{
+    width: 100%; 
+    background: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+}
+.burger_nav{
+    display: flex;
+    background: black;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 96%;
+    height: 50px;
+}
+.burger_nav_item{
+    background: black;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.burger_options, .burgerworks h2{
+    font-size: 2rem;
+}
+.burger_options{
+    width: 50%;
+}
+.btnworksclose{
+    display: none;
+}
+.burger_option{
+    width: 100%;
+    display: none;
+    background: black;
+}
+.buger button{
+    border: none;
+    text-decoration: none;
+}
+.burgerworks{
+    flex-wrap: wrap;
+    display: flex;
+}
+.burgerworks h2{
+    width: 15%;
+}

@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: black;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+
+
+/*nav*/
+nav{
+    display: flex;
+    width: 96%;
+    margin: 0 auto;
+    height: 50px;
+}
+.nav_item{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.modalwindow{
+    display: none;
+}
+/*header*/
+header{
+    display: flex;
+    width: 96%;
+    height: 100px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+h1{
+    font-size: 60px;
+}
+.header_item{
+    width: 50%;
+}
+.item_details{
+    display: flex;
+    height: 5vh;
+    justify-content: space-between;
+}
+.item_details p{
+    
+}
+.details{
+    width: 30%;
+}
+
+/*main*/
+.main_info{
+    display: flex;
+    flex-wrap: wrap;
+    width: 96%;
+    margin: 0 auto;
+    height: 130vh;
+    align-items: center;
+    justify-content: flex-end;
+}
+.main_info h3, p{
+    width: 50%;
+}
+.main_info img{
+    margin: 0 auto;
+    height: 80%;
+    /* width: 80%; */
+}
+.barbershop{
+    width: 50%;
+}
+.main_info button{
+    border: 1px solid grey;
+    border-radius: 10px;
+    height: 30px;
+}
+.images{
+    height: 1200px;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.image{
+    height: 45%;
+    width: 45%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.image:nth-child(3){
+    width: 90%;
+}
+#first{
+    background-image: url(../img/calctwo.png);
+}
+#first:nth-child(2){
+    background-image: url(../img/calcone.png);
+}
+#first:nth-child(3){
+    background-image: url(../img/calc.png);
+}
+#second{
+    background-image: url(../img/studio.png);
+}
+#second:nth-child(2){
+    background-image: url(../img/studioone.png);
+}
+#second:nth-child(3){
+    background-image: url(../img/studiotwo.png);
+}
+#third{
+    background-image: url(../img/grow.png);
+}
+#third:nth-child(2){
+    background-image: url(../img/growone.png);
+}
+#third:nth-child(3){
+    background-image: url(../img/growtwo.png);
+}
+#fourth{
+    background-image: url(../img/barberone.png);
+}
+#fourth:nth-child(2){
+    background-image: url(../img/barberthree.png);
+}
+#fourth:nth-child(3){
+    background-image: url(../img/barbershop.png);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#calc{
+    height: 500px;
+}
+#studio{
+    height: 800px;
+}
+#grow{
+    height: 900px;
+}
+#barbershop{
+    height: 500px;
+}
+#barbershop img{
+    height: 500px;
+}
+.nextwork {
+    height: 500px;
+    width: 96%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+}
+.nextimg{
+    height: 80%; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 50%;
+}
+.nextwork button{
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid grey;
+}
+.h2h3{
+    width: 45%;
+}
+.h2h3 h2{
+    font-size: 50px;
+}
+/*footer*/
+footer{
+    width: 96%;
+    margin: 0 auto;
+}
+.footer_item h2{
+    font-size: 80px;
+}
+.footer_item h3{
+    font-size: 50px;
+    color: grey;
+}
+.footer_item:nth-child(2){
+    display: flex;
+}
+.footer_item p{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+.footer_item:nth-child(2){
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+#fourth_next{
+    background-image: url(../img/calc.png);
+}
+#first_next{
+    background-image: url(../img/studioone.png);
+}
+#second_next{
+    background-image: url(../img/grow.png);
+}
+#third_next{
+    background-image: url(../img/barberone.png);
+}
+@media screen and (max-width:768px) {
+    .main_info{
+        height: 80vh;
+    }
+    header{
+        height: 180px;
+    }
+    .main_info{
+        height: 200px;
+    }
+    .main_info img{
+        height: 50%;
+    }
+    .nextwork{
+        height: 400px;
+    }
+    .nextimg{
+        height: 100%;
+        width: 65%;
+    }
+    .footer_item h2{
+        font-size: 2.5rem;
+    }
+    .footer_item h3{
+        font-size: 2.5rem;
+    }
+    #barbershop img{
+        height: 60%;
+    }
+    #calc img{
+        height: 70%;
+    }
+}
+@media screen and (max-width:425px){
+    .nav_item:nth-child(2) h3:nth-child(1){
+        display: none;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    .header_item{
+        width: 100%;
+    }
+    header{
+        flex-direction: column; 
+    }
+    .main_info img{
+        width: 100%;
+        height: 40%;
+        flex-direction: column;
+    }
+    .header_item p{
+        width: 100%;
+    }
+    .images{
+        height: 800px;
+    }
+    .image{
+        width: 100%;
+        height: 30%;
+    }
+    .nextwork{
+        height: 400px;
+        flex-wrap: wrap;
+    }
+    .h2h3{
+        width: 100%;
+    }
+    .h2h3 h2{
+        font-size: 1rem;
+    }
+    .nextwork img{
+        height: 50%;
+    }
+    #barbershop img{
+        height: 70%;
+    }
+    .footer_item h3{
+        font-size: 1rem;
+    }
+}
