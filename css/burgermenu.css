@@ -5,17 +5,17 @@
     flex-direction: column;
     align-items: flex-end;
     position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: all 0.4s ease;
 }
 .burger_nav{
-    display: flex;
-    background: black;
+    display: flex;  
     justify-content: space-between;
     margin: 0 auto;
     width: 96%;
     height: 50px;
 }
 .burger_nav_item{
-    background: black;
     width: 50%;
     display: flex;
     justify-content: space-between;
@@ -25,16 +25,26 @@
 .burger_options, .burgerworks h2{
     font-size: 2rem;
 }
+.burger_options h2, h3{
+    height: 50px;
+}
 .burger_options{
     width: 50%;
 }
+.btnworksopen{
+    display: flex;
+    background: none;
+    align-items: center;
+
+}
 .btnworksclose{
     display: none;
+    background: none;
+    align-items: center;
 }
 .burger_option{
     width: 100%;
     display: none;
-    background: black;
 }
 .buger button{
     border: none;
@@ -45,5 +55,33 @@
     display: flex;
 }
 .burgerworks h2{
-    width: 15%;
+    width: 10vw;
+    font-size: 2.5rem;
+}
+@media screen and (max-width:1025px) {
+    .burgerworks h2{
+    width: 13vw;
+}
+}
+@media screen and (max-width:768px) {
+    .burgerworks h2{
+    width: 17vw;
+    font-size: 2.3rem;
+}
+}
+@media screen and (max-width:425px) and (min-width:0px){
+    .burgerworks h2{
+    width: 22vw;
+    font-size: 1.5rem;
+}
+.btnworksopen, .btnworksclose{
+    align-items: flex-start;
+}
+.burger_nav_item:nth-child(2) h3:nth-child(1){
+    display: none;
+}
+.burger_options h2, h3{
+    font-size: 1.5rem; 
+    height: 40px;
+}
 }
