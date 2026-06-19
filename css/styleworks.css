@@ -264,6 +264,9 @@ footer{
     .nav_item:nth-child(2) h3:nth-child(1){
         display: none;
     }
+    nav{
+        height: 70px;
+    }
     h1{
         font-size: 3rem;
     }
@@ -289,7 +292,7 @@ footer{
         height: 30%;
     }
     .nextwork{
-        height: 400px;
+        height: 200px;
         flex-wrap: wrap;
     }
     .h2h3{
