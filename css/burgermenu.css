@@ -22,14 +22,22 @@
     text-align: center;
     align-items: center;
 }
-.burger_options, .burgerworks h2{
-    font-size: 2rem;
+.burger_nav_item h3{
+    display: flex;
+    align-items: center;
 }
-.burger_options h2, h3{
-    height: 50px;
+
+.bgh3{
+    font-size: 2.5rem;
 }
+.burger_options h2{
+    font-size: 2.5rem;
+}
+
 .burger_options{
     width: 50%;
+    display: flex;
+    flex-direction: column;
 }
 .btnworksopen{
     display: flex;
@@ -56,7 +64,6 @@
 }
 .burgerworks h2{
     width: 10vw;
-    font-size: 2.5rem;
 }
 @media screen and (max-width:1025px) {
     .burgerworks h2{
@@ -74,6 +81,9 @@
     width: 22vw;
     font-size: 1.5rem;
 }
+.burger_nav{
+    height: 70px;
+}
 .btnworksopen, .btnworksclose{
     align-items: flex-start;
 }
@@ -82,6 +92,10 @@
 }
 .burger_options h2, h3{
     font-size: 1.5rem; 
+    height: 40px;
+}
+.bgh3{
+    font-size: 1.5rem;
     height: 40px;
 }
 }
